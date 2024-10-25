@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Tumaninah - App</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="{{ url_for('static', filename='img/favicon.png') }}" rel="icon">
+  <link href="{{ url_for('static', filename='img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/aos/aos.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header id="header" class="header d-flex align-items-center sticky-top">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <h1 class="sitename"><span>Tumaninah</span>App</h1>
+          </a>
+      
+          <nav id="navmenu" class="navmenu">
+            <ul>
+              <li><a href="#home" class="active">Beranda</a></li>
+              <li><a href="#about">Tentang</a></li>
+              <li><a href="#features">Fitur AI</a></li>
+              <li><a href="#gallery">Galeri</a></li>
+              <li><a href="#download">Download</a></li>
+              <li><a href="#contact" class="btn-contact">Masuk</a></li>
+            </ul>
+          </nav>
+      
+          <!-- Hamburger Menu Icon for Mobile -->
+          <i class="mobile-nav-toggle bi bi-list"></i>
+        </div>
+      </header>
+
+      {% include 'hero.html' %}
+      
+
+      
+
+
+</body>
+</html>
